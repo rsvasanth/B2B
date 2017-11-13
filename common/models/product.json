@@ -1,0 +1,64 @@
+{
+  "name": "Product",
+  "plural": "products",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "categoryId": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "ref_no": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "futures": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "profit_percentage": {
+      "type": "number"
+    },
+    "allow_order": {
+      "type": "boolean"
+    },
+    "shipping_cost": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": "categoryId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
