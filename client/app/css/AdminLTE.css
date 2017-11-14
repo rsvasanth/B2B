@@ -199,7 +199,7 @@ img {
   background-color: #0073b7 !important;
 }
 .bg-light-blue {
-  background-color: #3c8dbc !important;
+  background-color: #f39c12 !important;
 }
 .bg-green {
   background-color: #00a65a !important;
@@ -938,7 +938,7 @@ header.header .logo .icon {
 .navbar-nav > .user-menu > .dropdown-menu > li.user-header {
   height: 175px;
   padding: 10px;
-  background: #3c8dbc;
+  background: #f39c12;
   text-align: center;
 }
 .navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
