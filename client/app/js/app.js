@@ -40,7 +40,9 @@
       'ui.select',
       'com.module.core',
       'com.module.files',
+      'com.module.inventory',
       'com.module.products',
+      'com.module.orders',
       'com.module.sandbox',
       'com.module.settings',
       'com.module.users'

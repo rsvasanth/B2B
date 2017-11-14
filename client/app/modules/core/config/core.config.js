@@ -25,14 +25,12 @@
       // Add Menu Dashboard
       $rootScope.addMenu(gettextCatalog.getString('Dashboard'), 'app.home',
       'fa-dashboard');
-      $rootScope.addMenu(gettextCatalog.getString('Orders'), 'app.home',
-      'fa-cart-arrow-down');
+
       $rootScope.addMenu(gettextCatalog.getString('Vendor'), 'app.home',
       'fa-group');
       $rootScope.addMenu(gettextCatalog.getString('Shipping'), 'app.home',
       'fa-ship');
-      $rootScope.addMenu(gettextCatalog.getString('Inventory'), 'app.home',
-        'fa-cubes');
+
       // Dashboard
       $rootScope.dashboardBox = [];
 

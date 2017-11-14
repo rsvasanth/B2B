@@ -10,7 +10,7 @@
       });
 
       Category.find(function (data) {
-        $rootScope.addDashboardBox(gettextCatalog.getString('Categories'), 'bg-aqua', 'ion-ios7-pricetag-outline', data.length, 'app.products.list');
+        $rootScope.addDashboardBox(gettextCatalog.getString('Categories'), 'bg-yellow', 'ion-ios7-pricetag-outline', data.length, 'app.products.list');
       });
 
     });
