@@ -29,7 +29,9 @@
         <a href="" ui-sref="^.view({productId: product.id})">{{product.name}}</a>
 
         <div class="pull-right">
-          <span class="label label-default">{{product.price}}</span>
+            <span ng-show="product.status"class="label label-success">Published+{{product.status}}</span>
+              <span ng-show="!product.status"class="label label-danger">Not Published+{{product.status}}</span>
+          <span class="label label-default">Price:{{product.price}}</span>
           <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({productId: product.id})">
             <i class="fa fa-pencil"></i>
           </a>

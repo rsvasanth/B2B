@@ -146,6 +146,13 @@
                   }
                 },
                 {
+                  key: 'status',
+                  type: 'input',
+                  templateOptions: {
+                    label: gettextCatalog.getString('status')
+                  }
+                },
+                {
                   key: 'shipping_cost',
                   type: 'input',
                   templateOptions: {
