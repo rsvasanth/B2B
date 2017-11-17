@@ -10,8 +10,8 @@
         templateUrl: 'modules/inventory/views/main.html'
       }).state('app.inventory.list', {
         url: '',
-        templateUrl: 'modules/sandbox/views/grid.html',
-        controller: 'SandboxGridCtrl'
+        templateUrl: 'modules/inventory/views/list.html',
+        controller: 'InventoryListCtrl'
 
       });
 
