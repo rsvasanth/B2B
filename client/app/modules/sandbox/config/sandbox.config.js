@@ -3,7 +3,7 @@
   angular
     .module('com.module.sandbox')
     .run(function ($rootScope) {
-      $rootScope.addMenu('Reports', 'app.sandbox.index', 'fa-inbox');
+      $rootScope.addMenu('Sandbox', 'app.sandbox.index', 'fa-inbox');
     });
 
 })();

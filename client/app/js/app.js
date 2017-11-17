@@ -43,6 +43,7 @@
       'com.module.inventory',
       'com.module.products',
       'com.module.orders',
+        'com.module.reports',
       'com.module.sandbox',
       'com.module.settings',
       'com.module.users'
