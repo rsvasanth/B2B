@@ -3,8 +3,12 @@
   angular
     .module('com.module.inventory')
 
-    .controller('InventoryListCtrl', function ($scope,Inventory) {
-      $scope.inventory = angular;
-    });
+    .controller('InventoryListCtrl', ['$scope', 'Inventory','InventoryService', function($scope,
+        Inventory,InventoryService) {
+$scope.inventory = InventoryService.getInventory().then(function (res,err) {
+  return res;
+});
+      console.log($scope.inventory)
+    }]);
 
 })();

@@ -1,8 +1,8 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <a href="" ui-sref="^.list" class="btn btn-xs btn-default"><i class="fa fa-arrow-left"></i></a>
-    {{ctrl.product.name}}
-    <small class="label label-default">{{ctrl.product.price}}</small>
+    {{ctrl.inventory.product}}
+    <small class="label label-default">{{ctrl.inventory.price}}</small>
 
     <span class="pull-right btn-group">
     <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({productId: ctrl.product.id})">
@@ -14,6 +14,6 @@
   </span>
   </div>
   <div class="panel-body">
-    <pre>{{ctrl.product | json}}</pre>
+    <pre>{{ctrl.inventory | json}}</pre>
   </div>
 </div>

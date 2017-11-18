@@ -6,7 +6,26 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "productId": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "catagoery": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],

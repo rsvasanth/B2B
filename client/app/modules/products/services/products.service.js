@@ -84,6 +84,14 @@
             }
           },
           {
+                  key: 'vendor',
+                  type: 'input',
+                  templateOptions: {
+                    label: gettextCatalog.getString('Vendor')
+
+                  }
+                },
+          {
             key: 'description',
             type: 'input',
             templateOptions: {
@@ -140,14 +148,14 @@
                 },
                 {
                   key: 'allow_order',
-                  type: 'input',
+                  type: 'checkbox',
                   templateOptions: {
                     label: gettextCatalog.getString('Allow Order')
                   }
                 },
                 {
                   key: 'status',
-                  type: 'input',
+                  type: 'checkbox',
                   templateOptions: {
                     label: gettextCatalog.getString('status')
                   }

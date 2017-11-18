@@ -29,8 +29,10 @@
         <a href="" ui-sref="^.view({productId: product.id})">{{product.name}}</a>
 
         <div class="pull-right">
-            <span ng-show="product.status"class="label label-success">Published+{{product.status}}</span>
-              <span ng-show="!product.status"class="label label-danger">Not Published+{{product.status}}</span>
+          <span ng-show="!product.allow_order"class="label label-danger">Allow order -</span>
+          <span ng-show="product.allow_order"class="label label-success">Allow order +</span>
+            <span ng-show="product.status"class="label label-success">Published+</span>
+              <span ng-show="!product.status"class="label label-danger">Not Published -</span>
           <span class="label label-default">Price:{{product.price}}</span>
           <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({productId: product.id})">
             <i class="fa fa-pencil"></i>
@@ -40,7 +42,7 @@
           </a>
         </div>
         <div class="pull-right col-sm-2">
-          <img ng-if="product.image" ng-src="{{product.image}}?id={{product.id}}"/>
+          <img height="100px" width="100px" ng-if="product.image" ng-src="{{product.image}}?id={{product.id}}"/>
         </div>
       </th>
     </tr>
