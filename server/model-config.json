@@ -62,7 +62,9 @@
   },
   "Category": {
     "dataSource": "db",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "AuthProvider": {
     "dataSource": "db",
@@ -95,5 +97,9 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Payment": {
+    "dataSource": "db",
+    "public": true
   }
 }

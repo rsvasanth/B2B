@@ -104,8 +104,9 @@
           url: '/profile',
           templateUrl: 'modules/users/views/profile.html',
           controllerAs: 'ctrl',
-          controller: function ($state, UserService, user) {
+          controller: function ($state, AppAuth,LoopBackAuth,UserService, user) {
             this.user = user;
+  this.accessTok = LoopBackAuth.accessTokenId;
             this.formFields = UserService.getFormFields('edit');
             this.formOptions = {};
             this.submit = function () {
@@ -117,6 +118,7 @@
           resolve: {
             user: function (User) {
               return User.getCurrent(function (user) {
+                console.log(user);
                 return user;
               }, function (err) {
                 console.log(err);

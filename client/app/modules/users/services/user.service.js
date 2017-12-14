@@ -5,11 +5,19 @@
     .service('UserService', function ($state, CoreService, User, gettextCatalog) {
 
       this.find = function () {
-        return User.find().$promise;
+        return User.find({   filter: {
+        include: [
+          'roles'
+        ]
+      }}).$promise;
       };
 
       this.findById = function (id) {
-        return User.findById({
+        return User.findById({filter: {
+        include: [
+          'roles'
+        ]
+      },
           id: id
         }).$promise;
       };
@@ -56,6 +64,8 @@
 
 
       this.getFormFields = function (formType) {
+
+
         var form = [
           {
             key: 'username',
@@ -86,6 +96,14 @@
             type: 'input',
             templateOptions: {
               label: gettextCatalog.getString('Last name'),
+              required: true
+            }
+          },
+          {
+            key: 'role',
+            type: 'select',
+            templateOptions: {
+              label: gettextCatalog.getString('Role'),
               required: true
             }
           }

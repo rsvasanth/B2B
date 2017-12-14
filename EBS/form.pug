@@ -1,0 +1,21 @@
+style.
+  input {
+  display : none;
+  }
+p Loading...
+form(action='https://secure.ebs.in/pg/ma/payment/request', id='payment', name='payment', method='POST')
+  table
+    tbody
+      each val, index in  data
+        tr
+          if(index=='preHash')
+            td.fieldName(width='50%')=index
+            td.fieldName(align='left', width='50%')=val
+          else if(index!='merge')
+            td.fieldName(width='50%')=index
+            td.fieldName(align='left', width='50%')=val
+            td 
+              input( type='text' value=val, name=index)
+  button(onclick='document.payment.submit();')  SUBMIT 
+  //script.
+    document.payment.submit();
