@@ -13,7 +13,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 (function(window, angular, undefined) {
   'use strict';
 
-  var urlBase = "http://localhost:3000/api";
+  var urlBase = "http://192.168.43.76:3000/api";
   var authHeader = 'authorization';
 
   function getHost(url) {
@@ -15505,7 +15505,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
       'LoopBackResource', 'LoopBackAuth', '$injector', '$q',
       function(LoopBackResource, LoopBackAuth, $injector, $q) {
         var R = LoopBackResource(
-        urlBase + "/payments/:id",
+        urlBase + "/Payments/:id",
           { 'id': '@id' },
           {
 
@@ -15543,7 +15543,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "create": {
-              url: urlBase + "/payments",
+              url: urlBase + "/Payments",
               method: "POST",
             },
 
@@ -15582,7 +15582,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              */
             "createMany": {
               isArray: true,
-              url: urlBase + "/payments",
+              url: urlBase + "/Payments",
               method: "POST",
             },
 
@@ -15620,7 +15620,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "upsert": {
-              url: urlBase + "/payments",
+              url: urlBase + "/Payments",
               method: "PUT",
             },
 
@@ -15658,7 +15658,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "replaceOrCreate": {
-              url: urlBase + "/payments/replaceOrCreate",
+              url: urlBase + "/Payments/replaceOrCreate",
               method: "POST",
             },
 
@@ -15695,7 +15695,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "upsertWithWhere": {
-              url: urlBase + "/payments/upsertWithWhere",
+              url: urlBase + "/Payments/upsertWithWhere",
               method: "POST",
             },
 
@@ -15727,7 +15727,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `exists` – `{boolean=}` -
              */
             "exists": {
-              url: urlBase + "/payments/:id/exists",
+              url: urlBase + "/Payments/:id/exists",
               method: "GET",
             },
 
@@ -15762,7 +15762,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "findById": {
-              url: urlBase + "/payments/:id",
+              url: urlBase + "/Payments/:id",
               method: "GET",
             },
 
@@ -15799,7 +15799,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "replaceById": {
-              url: urlBase + "/payments/:id/replace",
+              url: urlBase + "/Payments/:id/replace",
               method: "POST",
             },
 
@@ -15833,7 +15833,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              */
             "find": {
               isArray: true,
-              url: urlBase + "/payments",
+              url: urlBase + "/Payments",
               method: "GET",
             },
 
@@ -15866,7 +15866,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "findOne": {
-              url: urlBase + "/payments/findOne",
+              url: urlBase + "/Payments/findOne",
               method: "GET",
             },
 
@@ -15900,7 +15900,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * Information related to the outcome of the operation
              */
             "updateAll": {
-              url: urlBase + "/payments/update",
+              url: urlBase + "/Payments/update",
               method: "POST",
             },
 
@@ -15933,7 +15933,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "deleteById": {
-              url: urlBase + "/payments/:id",
+              url: urlBase + "/Payments/:id",
               method: "DELETE",
             },
 
@@ -15965,7 +15965,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `count` – `{number=}` -
              */
             "count": {
-              url: urlBase + "/payments/count",
+              url: urlBase + "/Payments/count",
               method: "GET",
             },
 
@@ -15980,7 +15980,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - payment id
+             *  - `id` – `{*}` - Payment id
              *
              * @param {Object} postData Request data.
              *
@@ -16002,7 +16002,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
             "prototype$updateAttributes": {
-              url: urlBase + "/payments/:id",
+              url: urlBase + "/Payments/:id",
               method: "PUT",
             },
 
@@ -16039,13 +16039,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `changes` – `{ReadableStream=}` -
              */
             "createChangeStream": {
-              url: urlBase + "/payments/change-stream",
+              url: urlBase + "/Payments/change-stream",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Payment#pay
+             * @name lbServices.Payment#greet
              * @methodOf lbServices.Payment
              *
              * @description
@@ -16056,14 +16056,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
              *  - `req` – `{object=}` -
-             *
-             *  - `res` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -16077,11 +16070,11 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * Data properties:
              *
-             *  - `status` – `{string=}` -
+             *  - `res` – `{string=}` -
              */
-            "pay": {
-              url: urlBase + "/payments/pay",
-              method: "POST",
+            "greet": {
+              url: urlBase + "/Payments/sayhi",
+              method: "GET",
             },
           }
         );
@@ -16294,7 +16287,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - payment id
+             *  - `id` – `{*}` - Payment id
              *
              * @param {Object} postData Request data.
              *
