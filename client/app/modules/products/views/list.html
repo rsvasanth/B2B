@@ -34,6 +34,7 @@
             <span ng-show="product.status"class="label label-success">Published+</span>
               <span ng-show="!product.status"class="label label-danger">Not Published -</span>
           <span class="label label-default">Price:{{product.price}}</span>
+                <span class="label label-danger">Qty:{{product.qty}}</span>
           <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({productId: product.id})">
             <i class="fa fa-pencil"></i>
           </a>

@@ -72,6 +72,14 @@
               label: gettextCatalog.getString('Name'),
               required: true
             }
+          },
+          {
+            key: 'image',
+            type: 'input',
+            templateOptions: {
+              label: gettextCatalog.getString('Image_Url'),
+              required: true
+            }
           }
         ];
       };
