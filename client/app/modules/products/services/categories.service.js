@@ -16,10 +16,8 @@
       };
 
       this.getCategory = function (id) {
-        return Category.findOne({
-          where: {
-            id: id
-          }
+        return Category.findById({
+          id: id
         }).$promise;
       };
 

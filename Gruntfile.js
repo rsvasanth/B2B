@@ -28,7 +28,7 @@ module.exports = function (grunt) {
       development: 'http://localhost:3000',
       production: 'http://52.21.177.154:3000/api/'
     },
-    host: 'localhost'
+    host: '52.21.177.154'
   };
 
   // Define the configuration for all the tasks
