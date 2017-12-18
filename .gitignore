@@ -15,4 +15,5 @@ client/coverage
 /.project
 .cache
 .config
+.Gruntfile
 .npm
